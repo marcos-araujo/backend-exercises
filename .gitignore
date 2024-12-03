@@ -1,0 +1,72 @@
+# Maven target directory
+/target/
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Maven dependency directory
+/.mvn/
+/.mvnw
+/.mvnw.cmd
+
+# Eclipse or IntelliJ IDEA specific project files
+/.idea/
+/*.iml
+/.classpath
+/.project
+/.settings/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
+
+# IntelliJ IDEA specific files
+out/
+.idea/
+*.ipr
+*.iws
+
+# Test reports
+/surefire-reports/
+/test-output/
+
+# Local environment variables or secrets
+.env
+
+# Logs
+*.pid
+*.seed
+
+# Files created by Maven during package
+*.jar
+*.war
+*.ear
+
+# Ignore build artifacts
+*.o
+*.so
+*.dylib
+*.dll
+*.exe
+*.app
+
+# Ignore coverage reports
+/coverage/
+*.lcov
+
+# Ignore generated documentation
+/site/
+
+# Ignore IDE index files
+/.cache/
+/.vscode/
