@@ -22,8 +22,7 @@ public class AddTwoNumbers {
         y1.setNext(y2);
         y2.setNext(y3);
 
-        ListNode listNodeResult = listNodeSolution(x1, y1);
-        System.out.println(listNodeResult);
+        System.out.println("ListNode Solution: " + listNodeSolution(x1, y1));
 
         var l1 = new LinkedList<Integer>();
         l1.add(2);
@@ -35,8 +34,7 @@ public class AddTwoNumbers {
         l2.add(6);
         l2.add(4);
 
-        LinkedList<Integer> linkedListResult = linkedListSolution(l1, l2);
-        System.out.println(linkedListResult);
+        System.out.println("LinkedList Solution: " + linkedListSolution(l1, l2));
     }
 
     /**
@@ -77,8 +75,8 @@ public class AddTwoNumbers {
         var l2Iterator = l2.iterator();
 
         while (l1Iterator.hasNext() || l2Iterator.hasNext() || carry != 0) {
-            int firstDigit = l1Iterator.next();
-            int secondDigit = l2Iterator.next();
+            int firstDigit = l1Iterator.hasNext() ? l1Iterator.next() : 0;
+            int secondDigit = l2Iterator.hasNext() ? l2Iterator.next() : 0;
 
             int result = firstDigit + secondDigit + carry;
             int digit = result % 10;

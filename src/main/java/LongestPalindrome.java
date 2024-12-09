@@ -1,16 +1,18 @@
 public class LongestPalindrome {
 
-    /*
-    Given a string s, return the longest palindromic substring in s.
-     */
+    /**
+      * Given a string s, return the longest palindromic substring in s.
+      */
 
     public static void main(String[] args) {
-        System.out.println(longestPalindromeBruteForce("cbbd"));
-        System.out.println(longestPalindromeExpandAroundCenter("cbbd"));
+        System.out.println("Brute Force Solution: " + bruteForceSolution("cbbd"));
+        System.out.println("Expand Around Center Solution: " + expandAroundCenterSolution("cbbd"));
     }
 
-    private static String longestPalindromeExpandAroundCenter(String str) {
-
+    /**
+     * Time Complexity:
+     */
+    private static String expandAroundCenterSolution(String str) {
         var maxStr = str.substring(0,1);
 
         for (int x = 0; x < str.length(); x++) {
@@ -36,7 +38,10 @@ public class LongestPalindrome {
         return str.substring(left+1, right);
     }
 
-    private static String longestPalindromeBruteForce(String str) {
+    /**
+     * Time Complexity:
+     */
+    private static String bruteForceSolution(String str) {
 
         var maxStg = str.substring(0,1);
 

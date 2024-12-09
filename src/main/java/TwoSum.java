@@ -12,17 +12,12 @@ public class TwoSum {
         int[] array = {2, 7, 11, 15};
         int target = 9;
 
-        int[] bruteForceResult = bruteForce(array, target);
-        int[] twoPassResult = twoPassHashTable(array, target);
-        int[] onePassResult = onePassHashTable(array, target);
-
-        System.out.println("Brute Force: " + Arrays.toString(bruteForceResult));
-        System.out.println("Two-Pass Hash Table: " + Arrays.toString(twoPassResult));
-        System.out.println("One-Pass Hash Table: " + Arrays.toString(onePassResult));
+        System.out.println("Brute Force: " + Arrays.toString(bruteForce(array, target)));
+        System.out.println("Two-Pass Hash Table: " + Arrays.toString(twoPassHashTable(array, target)));
+        System.out.println("One-Pass Hash Table: " + Arrays.toString(onePassHashTable(array, target)));
     }
 
     /**
-     * Brute force solution
      * Time Complexity: O(n^2)
      */
     private static int[] bruteForce(int[] nums, int target) {
@@ -35,7 +30,6 @@ public class TwoSum {
     }
 
     /**
-     * Two-pass hash table solution
      * Time Complexity: O(n)
      */
     private static int[] twoPassHashTable(int[] nums, int target) {
@@ -54,7 +48,6 @@ public class TwoSum {
     }
 
     /**
-     * One-pass hash table solution
      * Time Complexity: O(n)
      */
     private static int[] onePassHashTable(int[] nums, int target) {
